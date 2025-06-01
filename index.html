@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>Document</title>
 </head>
 <body>
     <header class="navbar">
   <div class="navbar-content">
     <div class="navbar-left">
-        <!-- Botão do Menu Hamburger -->
-<div class="menu-toggle" id="menu-toggle">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
 
       <img src="./assets/image/Captura_de_tela_2025-06-27_130510-removebg-preview.png" alt="Logo Limpe Seu Nome Agora" class="logo">
-      <nav class="nav-menu">
-        <a href="#">Home</a>
-        <a href="#">Serviços</a>
-        <a href="#">Soluções</a>
-      </nav>
+     <!-- Menu lateral fora do .navbar -->
+<div class="menu-overlay" id="menu-overlay"></div>
+
+<nav class="nav-menu" id="nav-menu">
+  <a href="#">Home</a>
+  <a href="#">Serviços</a>
+  <a href="#soluções">Soluções</a>
+  <a href="#">Contato</a>
+</nav>
+
     </div>
     <div class="navbar-right">
       <a href="#" class="client-area">
@@ -51,7 +52,7 @@ account_circle
     </a>
   </div>
 </section>
-<section class="solucoes">
+<section class="solucoes" id="soluções">
   <h4 class="subtitulo">SOLUÇÕES</h4>
   <h2 class="titulo">Produtos financeiros para o seu negócio</h2>
 
@@ -186,18 +187,25 @@ account_circle
 <script>
   const toggle = document.getElementById("menu-toggle");
   const navMenu = document.getElementById("nav-menu");
+  const overlay = document.getElementById("menu-overlay");
+  const closeBtn = document.getElementById("close-menu");
 
   toggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
+    navMenu.classList.add("active");
+    overlay.classList.add("active");
   });
 
-  // Fechar o menu clicando fora (opcional)
-  document.addEventListener("click", function (event) {
-    if (!navMenu.contains(event.target) && !toggle.contains(event.target)) {
-      navMenu.classList.remove("active");
-    }
+  closeBtn.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    overlay.classList.remove("active");
+  });
+
+  overlay.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    overlay.classList.remove("active");
   });
 </script>
+<script src="https://cdn.tailwindcss.com"></script>
 
 </body>
 </html>
