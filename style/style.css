@@ -401,6 +401,9 @@ footer{
   background-color: var(--footer) ;
 }
 
+  html {
+    scroll-behavior: smooth;
+  }
 
 @media (max-width: 1024px) {
   .hero {
