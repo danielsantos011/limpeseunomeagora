@@ -546,3 +546,17 @@ footer {
   color: #222d5a;
   transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+  form .linha {
+    flex-direction: column;
+  }
+
+  .campo {
+    width: 100%;
+  }
+
+  .contato-form {
+    padding: 20px;
+  }
+}
