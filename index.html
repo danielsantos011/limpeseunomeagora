@@ -201,18 +201,18 @@
         <div class="linha">
           <div class="campo">
             <label>Nome</label>
-            <input type="text" name="nome" placeholder="Digite seu nome">
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
           </div>
           <div class="campo">
             <label>E-mail</label>
-            <input type="email" name="email" placeholder="Digite seu e-mail">
+            <input type="email" name="email" placeholder="Digite seu e-mail" required>
           </div>
         </div>
 
         <div class="linha">
           <div class="campo">
             <label>Telefone</label>
-            <input type="tel" name="telefone" placeholder="Digite seu telefone">
+            <input type="tel" name="telefone" placeholder="Digite seu telefone" required>
           </div>
           <div class="campo">
             <label>Assunto</label>
@@ -228,11 +228,11 @@
 
         <div class="campo">
           <label>Mensagem</label>
-          <textarea name="mensagem" placeholder="Digite sua mensagem aqui."></textarea>
+          <textarea name="mensagem" placeholder="Digite sua mensagem aqui." required></textarea>
         </div>
 
         <div class="checkbox">
-          <input type="checkbox" name="privacidade"> Li e aceito os termos de <a href="#">Política de Privacidade</a>
+          <input type="checkbox" name="privacidade" required> Li e aceito os termos de <a href="#">Política de Privacidade</a>
         </div>
 
         <button type="submit">Enviar Mensagem</button>
