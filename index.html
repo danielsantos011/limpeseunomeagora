@@ -11,11 +11,11 @@
   <!-- Ícones do Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="shortcut icon" href="./assets/image/Captura_de_tela_2025-06-27_130510-removebg-preview.png"
+  <link rel="shortcut icon" href="./assets/image/WhatsApp_Image_2025-07-05_at_16.36.58-removebg-preview.png"
     type="image/x-icon">
   <link rel="stylesheet" href="./style/style.css">
 
-  <title>Limpe seu Nome Agora</title>
+  <title>Royal4 Credit</title>
 </head>
 
 <body>
@@ -29,8 +29,8 @@
           <span></span>
         </div>
 
-        <img src="./assets/image/WhatsApp_Image_2025-07-05_at_16.36.58-removebg-preview.png" alt="Logo Limpe Seu Nome Agora"
-          class="logo">
+        <img src="./assets/image/WhatsApp_Image_2025-07-05_at_16.36.58-removebg-preview.png"
+          alt="Logo Limpe Seu Nome Agora" class="logo">
         <nav class="nav-menu">
           <a href="#Home">Home</a>
           <a href="#Serviços">Serviços</a>
@@ -52,7 +52,7 @@
     <div class="hero-content">
       <h1>
         Crédito <span class="highlight-green">Fácil</span> e <br>
-        <span class="highlight-green">Rápido</span> é com a Limpe seu Nome Agora
+        <span class="highlight-green">Rápido</span> é com a Royal 4 Credit
       </h1>
       <p class="subtitle">
         A agilidade que o seu negócio precisa para prosperar.<br>
@@ -64,39 +64,40 @@
     </div>
   </section>
   <section class="credito-container">
-  <div class="credito-box left">
-    <div class="texto">
-      <h2>Crédito Consignado</h2>
-      <div class="icon">$</div>
-      <p>Aproveite taxas até 60% menores que de outros bancos<br>
-        Conheça todos os benefícios do Empréstimo Pessoal do Agibank e contrate agora. Valor liberado na hora!
-      </p>
-      <a href="#" class="btn-whatsapp">
-        Simular Crédito Consignado
-        <i class="fab fa-whatsapp"></i>
-      </a>
+    <div class="credito-box left">
+      <div class="texto">
+        <h2>Empréstimo Consignado</h2>
+        <div class="icon">$</div>
+        <p>Precisa de crédito com taxas reduzidas e pagamento facilitado? O Empréstimo Consignado da Royal 4 Credit é a
+          escolha certa para aposentados, pensionistas do INSS, servidores públicos e trabalhadores de carteira
+          assinada.
+        </p>
+        <a href="#" class="btn-whatsapp">
+          Simular Empréstimo
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+      <img src="./assets/image/casal.png" alt="Casal feliz" class="imagem" />
     </div>
-    <img src="./assets/image/casal.png" alt="Casal feliz" class="imagem" />
-  </div>
 
-  <div class="credito-box right">
-    <img src="./assets/image/casal2.png" alt="Casal feliz" class="imagem" />
-    <div class="texto">
-      <h2>Antecipação de FGTS</h2>
-      <div class="icon"><i class="far fa-clock"></i></div>
-      <p>Aproveite taxas até 60% menores que de outros bancos<br>
-        Conheça todos os benefícios do Empréstimo Pessoal do Agibank e contrate agora. Valor liberado na hora!
-      </p>
-      <a href="#" class="btn-whatsapp">
-        Antecipar Meu Saldo Agora
-        <i class="fab fa-whatsapp"></i>
-      </a>
+    <div class="credito-box right">
+      <img src="./assets/image/casal2.png" alt="Casal feliz" class="imagem" />
+      <div class="texto">
+        <h2>Antecipação de FGTS</h2>
+        <div class="icon"><i class="far fa-clock"></i></div>
+        <p>Na Royal 4 Credit, você transforma o seu FGTS futuro em dinheiro agora! Com a antecipação do
+          saque-aniversário, você recebe o valor disponível de forma rápida, segura e sem burocracia.
+        </p>
+        <a href="#" class="btn-whatsapp">
+          Antecipar Meu Saldo Agora
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Font Awesome para ícones -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome para ícones -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <section class="solucoes">
     <h4 class="subtitulo">SOLUÇÕES</h4>
@@ -188,15 +189,23 @@
 
     <div class="contato-form">
       <h3>Deixe a sua mensagem</h3>
-      <form>
+      <form id="form-contato" action="https://formsubmit.co/danielsdcruz01@gmail.com" method="POST">
+        <!-- Evita spam -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Redireciona após o envio -->
+       <input type="hidden" name="_next" value="https://danielsantos011.github.io/limpeseunomeagora/obrigado.html">
+        <!-- Nome do formulário -->
+        <input type="hidden" name="_subject" value="Nova mensagem via site LSNA!">
+
         <div class="linha">
           <div class="campo">
             <label>Nome</label>
-            <input type="text" placeholder="Digite seu nome">
+            <input type="text" name="nome" placeholder="Digite seu nome">
           </div>
           <div class="campo">
             <label>E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail">
+            <input type="email" name="email" placeholder="Digite seu e-mail">
           </div>
         </div>
 
@@ -207,20 +216,23 @@
           </div>
           <div class="campo">
             <label>Assunto</label>
-            <select>
+            <select name="assunto">
               <option>Escolha uma opção</option>
               <option value="">Empréstimo Consignado</option>
+              <option value="">Antecipação do FGTS</option>
+              <option value=""> Empréstimo Loas</option>
+              <option value="">Empréstimo na Conta de Luz</option>
             </select>
           </div>
         </div>
 
         <div class="campo">
           <label>Mensagem</label>
-          <textarea placeholder="Digite sua mensagem aqui."></textarea>
+          <textarea name="mensagem" placeholder="Digite sua mensagem aqui."></textarea>
         </div>
 
         <div class="checkbox">
-          <input type="checkbox"> Li e aceito os termos de <a href="#">Política de Privacidade</a>
+          <input type="checkbox" name="privacidade"> Li e aceito os termos de <a href="#">Política de Privacidade</a>
         </div>
 
         <button type="submit">Enviar Mensagem</button>
@@ -245,7 +257,7 @@
       </div>
 
       <div class="footer-copy">
-        &copy; 2025 Limpe Seu Nome Agora. Todos os direitos reservados.
+        &copy; 2025 Royal 4 Credit. Todos os direitos reservados.
       </div>
 
   </footer>
@@ -265,6 +277,54 @@
       }
     });
   </script>
+ <script>
+  document.getElementById("form-contato").addEventListener("submit", function (e) {
+    const nome = this.nome.value.trim();
+    const email = this.email.value.trim();
+    const telefone = this.telefone.value.trim();
+    const assunto = this.assunto.value;
+    const mensagem = this.mensagem.value.trim();
+    const privacidade = this.privacidade.checked;
+
+    if (nome === "") {
+      alert("Por favor, preencha seu nome.");
+      e.preventDefault();
+      return;
+    }
+
+    if (email === "" || !email.includes("@") || !email.includes(".")) {
+      alert("Por favor, insira um e-mail válido.");
+      e.preventDefault();
+      return;
+    }
+
+    if (telefone === "") {
+      alert("Por favor, preencha seu telefone.");
+      e.preventDefault();
+      return;
+    }
+
+    if (assunto === "Escolha uma opção" || assunto === "") {
+      alert("Por favor, selecione um assunto.");
+      e.preventDefault();
+      return;
+    }
+
+    if (mensagem === "") {
+      alert("Por favor, escreva sua mensagem.");
+      e.preventDefault();
+      return;
+    }
+
+    if (!privacidade) {
+      alert("Você precisa aceitar a Política de Privacidade.");
+      e.preventDefault();
+      return;
+    }
+  });
+</script>
+
+
 
 
 </body>

@@ -37,12 +37,17 @@ body {
 .logo {
   height: 100px;
   margin-right: 20px;
+  margin-left: 60px;
+}
+
+.nav-menu{
+  margin-left: 80px;
 }
 
 .nav-menu a {
   text-decoration: none;
   color: #333;
-  margin-right: 15px;
+  margin-right: 20px;
   font-size: 14px;
 }
 
@@ -629,7 +634,7 @@ footer {
 }
 
 .btn-whatsapp:hover {
-  background-color: #208622;
+  background-color: #917f50;
 }
 
 .imagem {
