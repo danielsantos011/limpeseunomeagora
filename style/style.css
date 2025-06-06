@@ -12,8 +12,8 @@ body {
 }
 
 :root{
-    --verde--principal: #49ab18;
-    --azul--principal: #222d5a;
+    --verde--principal: #b49851;
+    --azul--principal: #202020;
     --footer: #CED0D3;
 }
 
@@ -62,11 +62,11 @@ body {
 
 .client-area .icon {
   margin-right: 5px;
-  color: #4CAF50; /* Verde */
+  color: var(--verde--principal); /* Verde */
 }
 
 .contact-button {
-  background-color: #6cc04a;
+  background-color: var(--verde--principal);
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -138,7 +138,7 @@ body {
 }
 
 .card a {
-  color: #6cc04a;
+  color: var(--verde--principal);
   font-size: 14px;
   text-decoration: none;
   font-weight: 600;
