@@ -129,7 +129,6 @@ body {
   color: var(--azul--principal);
   font-size: 24px;
   margin: 15px 0 10px 0;
-  font-weight: 800;
 }
 
 .card p {
@@ -231,11 +230,11 @@ body {
 }
 
 .hero-content {
-  max-width: 620x;
+  max-width: 600px;
 }
 
 .hero h1 {
-  font-size: 56px;
+  font-size: 28px;
   font-weight: 700;
   color: #000000;
   line-height: 1.4;
@@ -389,7 +388,7 @@ button {
   font-weight: 600;
   transition: background-color 0.3s ease;
   text-align: center;
-  margin-left: 400px;
+  margin-left: 620px;
 }
 
 button:hover {
