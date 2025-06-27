@@ -11,6 +11,13 @@
     <header class="navbar">
   <div class="navbar-content">
     <div class="navbar-left">
+        <!-- Botão do Menu Hamburger -->
+<div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
       <img src="./assets/image/Captura_de_tela_2025-06-27_130510-removebg-preview.png" alt="Logo Limpe Seu Nome Agora" class="logo">
       <nav class="nav-menu">
         <a href="#">Home</a>
@@ -29,5 +36,168 @@ account_circle
     </div>
   </div>
 </header>
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      Crédito <span class="highlight-green">Fácil</span> e <br>
+      <span class="highlight-green">Rápido</span> é com a Limpe seu Nome Agora
+    </h1>
+    <p class="subtitle">
+      A agilidade que o seu negócio precisa para prosperar.<br>
+      Dinheiro na sua conta em até 2 horas.
+    </p>
+    <a href="#" class="cta-button">
+      Saiba mais →
+    </a>
+  </div>
+</section>
+<section class="solucoes">
+  <h4 class="subtitulo">SOLUÇÕES</h4>
+  <h2 class="titulo">Produtos financeiros para o seu negócio</h2>
+
+  <div class="cards">
+    <div class="card">
+      <img src="./assets/image/image 3.png" alt="Compra de Recebíveis">
+      <h3>Compra de recebíveis</h3>
+      <p>
+        Nossa abordagem simples e eficaz envolve a compra de recebíveis ou faturas,
+        liberando recursos imediatamente. Isso ajuda a evitar desafios de pagamento de clientes,
+        permitindo que...
+      </p>
+      <a href="#">Saiba mais</a>
+    </div>
+
+    <div class="card">
+      <img src="./assets/image/image 4.png" alt="Emissão de Boletos e Cobranças Simples">
+      <h3>Emissão de Boletos e Cobranças Simples.</h3>
+      <p>
+        Nossa equipe experiente adapta-se às suas necessidades, personalizando nossos serviços
+        de cobranças para atender aos requisitos específicos da sua empresa.
+      </p>
+      <a href="#">Saiba mais</a>
+    </div>
+
+    <div class="card">
+      <img src="./assets/image/image 5.png" alt="Varejo Garantido">
+      <h3>Varejo garantido</h3>
+      <p>
+        O Varejo Garantido é uma solução prática e segura para empresas que desejam otimizar
+        o fluxo de caixa e garantir suas vendas.
+      </p>
+      <a href="#">Saiba mais</a>
+    </div>
+  </div>
+</section>
+<section class="passos-credito">
+  <h2>É rápido e descomplicado <br>contratar seu crédito</h2>
+
+  <div class="linha-passos">
+    <div class="ponto"><span>1</span></div>
+    <div class="ponto"><span>2</span></div>
+    <div class="ponto"><span>3</span></div>
+    <div class="ponto"><span>4</span></div>
+  </div>
+
+  <div class="cards-passos">
+    <div class="card-passo">
+      <h3>Simulação</h3>
+      <p>Simule rapidamente com suas informações para ter uma oferta personalizada.</p>
+    </div>
+
+    <div class="card-passo">
+      <h3>Proposta</h3>
+      <p>Em poucas horas nossa consultoria propõe a melhor opção de crédito pra você.</p>
+    </div>
+
+    <div class="card-passo">
+      <h3>Análise</h3>
+      <p>Vamos pedir alguns documentos: RG, comprovante de residência, matrícula do imóvel e IPTU.</p>
+    </div>
+
+    <div class="card-passo">
+      <h3>Liberação</h3>
+      <p>Quando estiver tudo certo com a documentação, em poucos dias o dinheiro cai na sua conta.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contato">
+  <div class="contato-info">
+    <h2>Entre em contato <br><span>com o time da LSNA</span></h2>
+    <p>Preencha o formulário e em breve nossa equipe entrará em contato.</p>
+
+    <div class="contato-item">
+      <img src="./assets/image/Vector1.png" alt="E-mail">
+      <span>atendimentolsna@gmail.com</span>
+    </div>
+
+    <div class="contato-item">
+      <img src="./assets/image/Vector.png" alt="WhatsApp">
+      <span>(11) 99999-9999</span>
+    </div>
+
+
+  </div>
+
+  <div class="contato-form">
+    <h3>Deixe a sua mensagem</h3>
+    <form>
+      <div class="linha">
+        <div class="campo">
+          <label>Nome</label>
+          <input type="text" placeholder="Digite seu nome">
+        </div>
+        <div class="campo">
+          <label>E-mail</label>
+          <input type="email" placeholder="Digite seu e-mail">
+        </div>
+      </div>
+
+      <div class="linha">
+        <div class="campo">
+          <label>Telefone</label>
+          <input type="tel" placeholder="Digite seu telefone">
+        </div>
+        <div class="campo">
+          <label>Assunto</label>
+          <select>
+            <option>Escolha uma opção</option>
+            <option value="">Empréstimo Consignado</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="campo">
+        <label>Mensagem</label>
+        <textarea placeholder="Digite sua mensagem aqui."></textarea>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox"> Li e aceito os termos de <a href="#">Política de Privacidade</a>
+      </div>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </div>
+</section>
+<footer>
+
+</footer>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  toggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+
+  // Fechar o menu clicando fora (opcional)
+  document.addEventListener("click", function (event) {
+    if (!navMenu.contains(event.target) && !toggle.contains(event.target)) {
+      navMenu.classList.remove("active");
+    }
+  });
+</script>
+
 </body>
 </html>
