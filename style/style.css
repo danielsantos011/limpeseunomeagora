@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+     font-family: 'Poppins', Arial, sans-serif;
+}
+
+
+body {
+  margin: 0;
+   font-family: 'Poppins', Arial, sans-serif;
+}
+
+:root{
+    --verde--principal: #49ab18;
+    --azul--principal: #222d5a;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.client-area {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1b2a4e;
+  font-size: 14px;
+  margin-right: 40px;
+}
+
+.client-area .icon {
+  margin-right: 5px;
+  color: #4CAF50; /* Verde */
+}
+
+.contact-button {
+  background-color: #6cc04a;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-right: 40px;
+}
+
+.contact-button:hover {
+  background-color: var(--verde--principal);
+}
+
+.material-symbols-outlined{
+  color: var(--verde--principal);
+  margin-right: 10px;
+}
