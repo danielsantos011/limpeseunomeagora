@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+     font-family: 'Poppins', Arial, sans-serif;
+}
+
+
+body {
+  margin: 0;
+   font-family: 'Poppins', Arial, sans-serif;
+}
+
+:root{
+    --verde--principal: #49ab18;
+    --azul--principal: #222d5a;
+    --footer: #CED0D3;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.client-area {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1b2a4e;
+  font-size: 14px;
+  margin-right: 40px;
+}
+
+.client-area .icon {
+  margin-right: 5px;
+  color: #4CAF50; /* Verde */
+}
+
+.contact-button {
+  background-color: #6cc04a;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-right: 40px;
+}
+
+.contact-button:hover {
+  background-color: var(--verde--principal);
+}
+
+.material-symbols-outlined{
+  color: var(--verde--principal);
+  margin-right: 10px;
+}
+
+
+.solucoes {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.subtitulo {
+  color: var(--verde--principal);
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.titulo {
+  color: var(--azul--principal);
+  font-size: 29px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  max-width: 300px;
+  text-align: left;
+  margin: 50px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card h3 {
+  color: var(--azul--principal);
+  font-size: 24px;
+  margin: 15px 0 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card a {
+  color: #6cc04a;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.passos-credito {
+  background-color: var(--azul--principal);
+  color: #ffffff;
+  padding: 50px 30px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.passos-credito h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.linha-passos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.linha-passos::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--verde--principal);
+  z-index: 1;
+}
+
+.ponto {
+  background-color: var(--verde--principal);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cards-passos {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.card-passo {
+  background-color: var(--verde--principal);
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  min-width: 220px;
+  color: #ffffff;
+}
+
+.card-passo h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-passo p {
+  font-size: 14px;
+}
+
+
+
+.hero {
+  padding: 50px 20px;
+  margin-left: 150px;
+  margin-top: 150px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.highlight-green {
+  color: var(--verde--principal);
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #7a7a7a;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--azul--principal);
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--azul--principal);
+}
+
+
+
+
+
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contato-info {
+  max-width: 300px;
+}
+
+.contato-info h2 {
+  font-size: 22px;
+  color: #000;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.contato-info h2 span {
+  color: var(--verde--principal);
+  font-weight: 700;
+}
+
+.contato-info p {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contato-item img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.mulher-img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.contato-form {
+  background-color: var(--verde--principal);
+  padding: 30px;
+  border-radius: 20px;
+  color: #fff;
+  flex: 1;
+  min-width: 320px;
+}
+
+.contato-form h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form .linha {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+.checkbox {
+  font-size: 12px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.checkbox a {
+  color: #000;
+  text-decoration: underline;
+}
+
+button {
+  background-color: var(--azul--principal);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-left: 620px;
+}
+
+button:hover {
+  background-color: var(--azul--principal);
+}
+
+footer{
+  padding: 100px;
+  background-color: var(--footer) ;
+}
+
+
+@media (max-width: 1024px) {
+  .hero {
+    margin-left: 0;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 20px 10px;
+    max-width: 90%;
+  }
+
+  .linha-passos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards-passos {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    margin-left: 0;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left, .navbar-right {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .menu-toggle span {
+    height: 2px;
+    background: #000;
+    margin: 4px 0;
+    width: 25px;
+  }
+
+  .contato {
+    flex-direction: column;
+    padding: 30px 20px;
+    align-items: center;
+  }
+
+  .contato-info, .contato-form {
+    max-width: 100%;
+  }
+
+  .linha {
+    flex-direction: column;
+  }
+
+  .campo {
+    width: 100%;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+}
+
