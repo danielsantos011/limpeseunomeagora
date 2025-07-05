@@ -561,6 +561,7 @@ footer {
   }
 }
 
+<<<<<<< HEAD
 .credito-container {
   max-width: 1200px;
   margin: 50px auto;
@@ -637,3 +638,39 @@ footer {
   border-radius: 12px;
 }
 
+=======
+@media (max-width: 360px) {
+  .contato {
+    flex-direction: column;
+    padding: 20px 10px; /* padding lateral reduzido */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contato-form {
+    padding: 20px 15px;
+    max-width: 100%;        /* ocupa no máximo a largura da tela */
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box; /* inclui o padding na largura total */
+  }
+
+  .contato-info {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+
+  .campo input,
+  .campo select,
+  .campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contato-form button {
+    width: 100%;
+  }
+}
+>>>>>>> 9789f1442129f2ec91c5ea8f4613ae6670dc74c1
