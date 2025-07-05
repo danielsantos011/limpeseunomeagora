@@ -1,0 +1,146 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 100px;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.box-text {
+    max-width: 400px;
+}
+
+.box-text h2 {
+    color: #7BBE33;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #7BBE33;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7BBE33;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.box-text p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #7BBE33;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #6aa72c;
+}
+
+.box-image img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.credito {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.fgts {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 50px;
+        height: auto;
+    }
+
+    .box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+.footer {
+  background-color: #ccc;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+}
+
+.footer-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.visao-financeira {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-footer {
+  height: 70px;
+  width: auto;
+}
+
+.texto-visao h3 {
+  margin: 0;
+  color: #0a3488; /* azul da logo */
+}
+
+.texto-visao p {
+  margin: 0;
+  color: #8dc63f; /* verde da logo */
+}
+
+.social-icons a {
+  margin: 0 8px;
+  color: #0a3488;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
